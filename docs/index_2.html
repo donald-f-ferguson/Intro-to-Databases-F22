@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>W4111: Introduction to Databases -- Web Application</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="./vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+      <link href="./bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/small-business.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
+    <script src="app_module.js"></script>
+
+    <!-- DFF -->
+    <script src="./homeController.js"></script>
+    <script src="./profileController.js"></script>
+    <script src="//connect.facebook.net/en_US/all.js"></script>
+
+  </head>
+
+  <body ng-app="CustomerApp" ng-controller="homeController">
+
+  <!-- Modal -->
+    <div id="loginModal"  class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login or Register</h4>
+          </div>
+          <div class="modal-body" >
+            <form ng-show="!loginRegisterResult">
+              <div ng-show="register" class="form-group">
+                <label for="exampleInputFirstname">First name</label>
+                <input ng-model="firstName" type="text" class="form-control" id="exampleInputFirstname"  aria-describedby="emailHelp" placeholder="Enter first name">
+                <small id="firstName" class="form-text text-muted">We'll never share your name with anyone else.</small>
+              </div>
+              <div ng-show="register" class="form-group">
+                <label for="exampleInputLastname">Last name</label>
+                <input ng-model="lastName" type="text" class="form-control" id="exampleInputLastname"  aria-describedby="emailHelp" placeholder="Enter first name">
+                <small id="lastName" class="form-text text-muted">We'll never share your last name with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input ng-model="lemail" type="text" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.{{password}}{{lemail}}</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" ng-model="password" placeholder="Password">
+              </div>
+              <div ng-show="register" class="form-group">
+                <label for="exampleInputPassword2">Reenter password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" ng-model="password2" placeholder="Reenter Password">
+              </div>
+              <div class="form-check">
+                <input ng-model="register" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label  class="form-check-label" for="exampleCheck1">Register</label>
+              </div>
+            </form>
+            <div ng-show="loginRegisterResult">
+              <h2>Result = {{loginRegisterMessage}}</h2>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button  ng-show="loginOK()&&(!loginRegisterResult)" type="button" class="btn btn-default btn-primary" ng-click="driveLogin()">Login or Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Welcome to W4111: Introduction to Databases</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li id="home" ng-click="navMenu('home')" ng-class="getNavClass('home')">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li ng-click="navMenu('about')" ng-class="getNavClass('about')">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li ng-click="navMenu('Baseball')" ng-class="getNavClass('baseball')">
+              <a class="nav-link" href="#!/baseball">Baseball</a>
+            </li>
+            <li ng-click="navMenu('services')" ng-class="getNavClass('services')">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li ng-click="navMenu('contact')" ng-class="getNavClass('contact')"">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li ng-click="doLogin()" ng-class="getNavClass('contact')">
+              <a class="nav-link"ng-click="doLogin()">Login</a>
+            </li>
+            <li ng-click="navMenu('logout')" ng-class="getNavClass('logout')" ng-show="loginRegisterResult">
+              <a class="nav-link" ng-click="doLogout()">Logout</a>
+            </li>
+            <li ng-click="navMenu('profile')" ng-class="getNavClass('profile')" ng-show="loginRegisterResult">
+              <a class="nav-link" href="#!/profile">My Profile/My Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div ng-view></div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

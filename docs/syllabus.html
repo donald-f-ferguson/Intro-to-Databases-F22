@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>COMSW4111_002_2021_1 - INTRODUCTION TO DATABASES</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<script>
+    $(document).ready(function () {
+        $('i').click(function () {
+            $(this).toggleClass('fa-plus-square fa-minus-square');
+        });
+    });
+</script>
+
+<!-- Navigation -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">W4111 - Introduction to Databases<br>(Sec. 002/V02, Spring 2022)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About the Course</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="syllabus.html">Syllabus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exams_assignments.html">HW/Exams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="examples.html">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reference-material.html">Reference Material</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">Instructors</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-primary py-5 mb-5">
+    <div class="container h-50">
+        <div class="row h-50 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">Syllabus</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- /.row -->
+    <div style="border-bottom-style: solid; border-top-style: solid;" class="row">
+        <div class="col">
+        <h2>Note:</h2>
+            <p>
+                This is <b>tentative</b> and we are refining during the first week.
+            </p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="col">
+            <p></p>
+        <p></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1" align="center">
+            <table style="height: 171px; width: 1200px;" border="2" cellspacing="2">
+                <tbody>
+                <tr style="height: 21px;">
+                    <td style="width: 100px; height: 21px;"><strong>Lecture No.</strong></td>
+                    <td style="width: 100px; height: 21px;"><strong>Date</strong></td>
+                    <td style="width: 600px; height: 21px;"><strong>Topics</strong></td>
+                    <td style="width: 300px; height: 21px;"><strong>Exams and Homework</strong>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">1</td>
+                    <td style="width: 100px; height: 91px;">21-Jan</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Introduction, Course Overview, Foundational Concepts</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L1"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L1" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                <li>Course overview, assignments, exams, grading, logistics, ...
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Data, database systems, data models, programming languages, application
+                                        architectures,
+                                        user roles.
+                                    </li>
+                                    <li>Relational model, keys, schema, schema diagrams.</li>
+                                    <li>Introduction to SQL, schema, DDL, basic queries.</li>
+                                    <li>Overview of the Entity-Relationship Model.</li>
+                                </ul>
+                                <li>Reference material: Database Systems Concepts (Silberschatz)</li>
+                                <ul>
+                                    <li>Chapter 1.</li>
+                                    <li>Sections 2.1 through 2.4</li>
+                                    <li>Sections 3.1, 3.2, 3.3</li>
+                                    <li>Chapter 6: Sections 6.1, 6.2</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Homework 0 assigned.<br>
+                            Homework 1 assigned.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">2</td>
+                    <td style="width: 100px; height: 91px;">28-Jan</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Relational Model and Algebra<br>Intro to SQL, Data Modeling,and Applications</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L2"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L2" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Relational Model, Relational Algebra.</li>
+                                    <li>SQL: Data Definition Language</li>
+                                    <li>SQL: Advanced SELECT clause, Set operations, aggregate functions, updates.</li>
+                                    <li>Data modeling: ER-Model, entities, relationships, keys, cardinality.</li>
+                                    <li>Introduction to Pandas. Pandas and SQL.
+                                </ul>
+                                <li>Reference material: Database Systems Concepts (Silberschatz)</li>
+                                <ul>
+                                    <li>Sections 3.4 - 3.10</li>
+                                    <li>Sections 2.4 - 2.6 (continued)</li>
+                                    <li>Sections 6.3 - 6.8</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Homework 0 due.<br>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">3</td>
+                    <td style="width: 100px; height: 91px;">4-Feb</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Intermediate SQL,Data Modeling, Applications</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L3"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L3" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <li>Topics:</li>
+                            <ul>
+                                <li>SQL: Join, Views, Integrity Constraints, Indexes
+                                <li>Data Modeling: Design issues, modeling to relational, advanced topics.
+                                <li>Patterns: Inheritance, Aggregation, ...</li>
+                                </ul>
+                            <li>Reference material: Database Systems Concepts (Silberschatz)</li>
+                            <ul>
+                                    <li>Chapter 4.</li>
+                                    <li>Sections 6.9 - 6.11</li>
+                                </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Homework 1 due.<br>
+                            Homework 2 assigned.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">4</td>
+                    <td style="width: 100px; height: 91px;">11-Feb</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Advanced SQL, Data Modeling Patterns, Applications</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L4"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L4" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Functions, Procedures, Triggers.</li>
+                                    <li>Recursive queries, Window Functions.</li>
+                                    <li>Cursors, Connections, Transactions, Isolation Levels.</li>
+                                </ul>
+                                <li>Reference material: Database Systems Concepts (Silberschatz)</li>
+                                <ul>
+                                    <li>Chapter 5</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">5</td>
+                    <td style="width: 100px; height: 91px;">18-Feb</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Example Use Cases and Scenario Implementation</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L5"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L5" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                <li>Modeling and implementing Columbia University course, sections, ... ...
+                                <li>Improving and optimizing IMDB data, ... ...
+                                <li>Other models TBD</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Homework 2 due.<br>
+                            Homework 3 assigned.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">6</td>
+                    <td style="width: 100px; height: 91px;">25-Feb</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Normalization, De-normalization, Design Patterns</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L6"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L6" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Relational design objectives and issues.</li>
+                                    <li>Functional dependencies.</li>
+                                    <li>Normal forms.</li>
+                                    <li>Normalization tradeoffs and examples.
+                                </ul>
+                                <li>Reference material: Database Systems Concepts (Silberschatz)</li>
+                                <ul>
+                                    <li>Chapter 7.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            <br>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">7</td>
+                    <td style="width: 100px; height: 91px;">4-Mar</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Data Storage, Indexes, Query Processing, Transactions</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L7"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L7" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Data storage media, formats and data structures.</li>
+                                    <li>Indexes.</li>
+                                    <li>Query processing.</li>
+                                    <li>Transactions, isolation/currency control, recover.</li>
+                                </ul>
+                                <li>Reference material: Subset of material in chapters 12-19.</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            HW 3 due.<br>
+                            Take home midterm released.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">8</td>
+                    <td style="width: 100px; height: 91px;">11-Mar</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>No SQL, Cloud Databases (1)</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L8"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L8" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                 <li>Topics</li>
+                                <ul>
+                                    <li>No SQL concepts and motivation.</li>
+                                    <li>CAP "Theorem". Consistency, eventual consistency.</li>
+                                    <li>Scale-up versus Scale-out.</li>
+                                    <li>Graph databases, Neo4j.</li>
+                                </ul>
+                                <li>Reference material:</li>
+                                <ul>
+                                    <li>TBD</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">9</td>
+                    <td style="width: 100px; height: 91px;">18-Mar</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>No class - Spring break.</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L9"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div
+                                class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            <b>Take home midterm released on 21-Mar.</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">10</td>
+                    <td style="width: 100px; height: 91px;">25-Mar</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>NoSQL, Cloud Databases (II)</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L10"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L10" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Topics</li>
+                                    <ul>
+                                        <li>Document DBs: MongoDB, DynamoDB</li>
+                                        <li>Key Value: Redis</li>
+                                        <li>Time Series DB: TBD</li>
+                                    </ul>
+                                    <li>Reference material:</li>
+                                    <ul>
+                                        <li>TBD</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            HW4 assigned.<br>
+                            <b>Midterm due on 27-Mar.</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">11</td>
+                    <td style="width: 100px; height: 91px;">1-Apr</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Big Data, Data Insight (I)</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L11"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L11" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Data warehose, data lake</li>
+                                    <li>De-normalization</li>
+                                    <li>OLAP</li>
+                                </ul>
+                                <li>Reference material:</li>
+                                <ul>
+                                    <li>TBD</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Homework 3 due.<br>
+                            Homework 4 assigned.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">12</td>
+                    <td style="width: 100px; height: 91px;">8-Apr</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Big Data, Insights (II)</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-L12"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-L12" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>MapReduce, Hadoop, Sparq, AWS Glue</li>
+                                    <li>Dashboard, analysis techniques</li>
+                                </ul>
+                                <li>Reference material</li>
+                                <ul>
+                                    <li>TBD</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            HW4 assigned.<br>
+                            HW5 assigned.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">13</td>
+                    <td style="width: 100px; height: 91px;">15-Apr</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Python Ecosystem, examples</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-13"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-13" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                                <li>Topics</li>
+                                <ul>
+                                    <li>Jupyter</li>
+                                    <li>Pandas</li>
+                                    <li>Plotly, Map Plot Lib</li>
+                                    <li>ScitKit</li>
+                                    <li>... ...</li>
+                                </ul>
+                                <li>Reference material</li>
+                                <ul>
+                                    <li>TBD</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">14</td>
+                    <td style="width: 100px; height: 91px;">22-Apr</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Overflow and final exam preparation</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-YYY"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                            </button>
+                        </p>
+                        <div id="collapse-YYY" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+
+                            <li>Topics</li>
+                            <ul>
+                                <li>TBD</li>
+                            </ul>
+                            <li>Reference material</li>
+                            <ul>
+                                <li>TBD</li>
+                            </ul>
+                        </ul>
+                        </div>
+                    </td>
+                    <td style="width: 300px; height: 91px;">
+                        <p>
+                            Take home final issued.<br>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+</div>
+<!-- /.container -->
+<p></p>
+<p></p>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy;Donald F. Ferguson, 2021</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

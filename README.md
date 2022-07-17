@@ -1,2 +1,2 @@
-# Intro-to-Databases-F22
-W4111 - Introduction to Databases course, Columbia University, Fall 2022
+# W4111-Intro-to-DB-S22
+Intro. to Databases, sections 002, V02, Spring 2022
